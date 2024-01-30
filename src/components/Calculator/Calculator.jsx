@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import classes from './Calculator.module.css'
-import Button from './components/Button/Button'
+import Button from './../Button/Button';
 
 function Calculator() {
   const [count, setCount] = useState(0)
