@@ -1,0 +1,38 @@
+
+
+.Calculator{
+  inline-size: calc(64px * 4);
+  margin: 0 auto;
+  margin-block: 30px;
+  border: 1px solid gray;
+  display: flex;
+  flex-flow: row wrap;
+  
+  & button {
+    inline-size: 64px;
+    block-size: 64px;
+  }
+
+  .display {
+    inline-size: 100%;
+    block-size: 60px;
+    padding: 25px 20px;
+    text-align: right;
+    font-size: 36px;
+    line-height: 1.6;
+  }
+}
+
+.numberPad {
+  inline-size: calc(64px * 3);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+.operator {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
