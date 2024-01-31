@@ -3,13 +3,15 @@ import classes from './Button.module.css';
 
 
 function Button({ 
-  buttonType='number',
+  onClickButton,
+  name,
   children
 }) {
 
   return (
     <button
       type="button"
+      onClick={() => onClickButton(name)}
     >
       {children}
     </button>

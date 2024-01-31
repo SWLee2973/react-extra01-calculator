@@ -11,6 +11,8 @@
   & button {
     inline-size: 64px;
     block-size: 64px;
+    /* block-size: 100%; */
+    /* max-block-size: 64px; */
   }
 
   .display {
@@ -32,7 +34,9 @@
 }
 
 .operator {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
 }
